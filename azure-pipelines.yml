@@ -1,5 +1,12 @@
 trigger:
-- master
+  branches:
+    exclude:
+      - '*'
+
+pr:
+  branches:
+    include:
+      - main
 
 pool:
   vmImage: 'windows-latest'
